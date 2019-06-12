@@ -1,6 +1,8 @@
 # `Magic`
 
-### (A React Component Theme Park)
+### A React Component Theme Park
+
+---
 
 ### `Description`
 
@@ -8,9 +10,11 @@
 
 - Back-end API created with `Express` to provide random colors to the UI
 
+---
+
 ### `Technologies & Libraries Utilised`
 
-- React Hooks
+- Hooks
 - blotter.js
-- React-spring
-- React-gradient
+- react-spring
+- react-gradient
