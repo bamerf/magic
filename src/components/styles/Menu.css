@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Megrim|Raleway+Dots&display=swap');
 
+.menu {
+  position: absolute;
+}
 .menuItems {
   width: 300px;
   padding: 0;

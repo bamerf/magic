@@ -14,7 +14,7 @@
 
 .pages {
   display: inline-flex;
-  margin: 0.5rem 2rem;
+  margin: auto;
   width: 300px;
   justify-content: space-between;
 }

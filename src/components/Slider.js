@@ -22,11 +22,7 @@ export default class Slider extends Component {
         <div className='slider-bg'>
           <div className='left' style={{ width: `${this.sliderWidth()}` }} />
           <div className='right' style={{ width: `${this.sliderWidth()}` }} />
-          <img
-            className='triangle-img'
-            src={triangleImage}
-            alt='Triangle Image'
-          />
+          <img className='triangle-img' src={triangleImage} alt='' />
         </div>
       </div>
     );

@@ -5,14 +5,14 @@ import Menu from './components/Menu';
 import Hero from './components/Hero';
 import Carousel from './components/Carousel';
 import Slider from './components/Slider';
-import Shutter from './components/Shutter';
+import Video from './components/Video';
 
 function App() {
   return (
     <div className='App'>
       <div className='front-page'>
+        <Menu />
         <div className='header'>
-          <Menu />
           <Header />
         </div>
         <div className='hero'>
@@ -21,7 +21,7 @@ function App() {
       </div>
       <Carousel />
       <Slider />
-      <Shutter />
+      <Video />
     </div>
   );
 }
