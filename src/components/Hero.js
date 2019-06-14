@@ -4,13 +4,15 @@ import './styles/Hero.css';
 
 export default function Hero() {
   return (
-    <LiquidDistortionText
-      className='hero'
-      text='◻︎'
-      fontSize={500}
-      fill={'#FF9F1C'}
-      speed={0.09}
-      volatility={0.05}
-    />
+    <div className='hero'>
+      <LiquidDistortionText
+        className='hero'
+        text='◻︎'
+        fontSize={500}
+        fill={'#FF9F1C'}
+        speed={0.09}
+        volatility={0.05}
+      />
+    </div>
   );
 }

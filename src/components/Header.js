@@ -7,10 +7,12 @@ import { ReactComponent as Triangle } from './styles/resources/Triangle.svg';
 export default class Header extends Component {
   render() {
     return (
-      <div className='pages'>
-        <Circle />
-        <Rectangle />
-        <Triangle />
+      <div className='header'>
+        <div className='pages'>
+          <Circle />
+          <Rectangle />
+          <Triangle />
+        </div>
       </div>
     );
   }

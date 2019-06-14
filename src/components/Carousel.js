@@ -3,9 +3,21 @@ import { useTransition, animated } from 'react-spring';
 import './styles/carousel.css';
 
 const pages = [
-  ({ style }) => <animated.div style={{ ...style, background: '#2B2118' }} />,
-  ({ style }) => <animated.div style={{ ...style, background: '#5E0B15' }} />,
-  ({ style }) => <animated.div style={{ ...style, background: '#0D1F22' }} />
+  ({ style }) => (
+    <animated.div style={{ ...style, background: '#2B2118' }}>
+      Ca...
+    </animated.div>
+  ),
+  ({ style }) => (
+    <animated.div style={{ ...style, background: '#5E0B15' }}>
+      ...rou...
+    </animated.div>
+  ),
+  ({ style }) => (
+    <animated.div style={{ ...style, background: '#0D1F22' }}>
+      ...sel
+    </animated.div>
+  )
 ];
 
 export default function Carousel() {

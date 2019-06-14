@@ -12,16 +12,12 @@ function App() {
     <div className='App'>
       <div className='front-page'>
         <Menu />
-        <div className='header'>
-          <Header />
-        </div>
-        <div className='hero'>
-          <Hero />
-        </div>
+        <Header />
+        <Hero />
       </div>
-      <Carousel />
-      <Slider />
-      <Video />
+      <Carousel className='page-2' />
+      <Slider className='page-3' />
+      <Video className='page-4' />
     </div>
   );
 }
