@@ -28,5 +28,4 @@
 ### `Issues`
 
 - Routing doesn't work yet
-- Video is stuck the first time you load (`please refresh to fix`)
 - layout is responive to a certain point but breaks on mobile
