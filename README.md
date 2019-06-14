@@ -12,9 +12,21 @@
 
 ---
 
+> ## [👉 Checkout app here](http://magic-park-bam.surge.sh/)
+
+---
+
 ### `Technologies & Libraries Utilised`
 
 - Hooks
 - blotter.js
 - react-spring
 - react-gradient
+
+---
+
+### `Issues`
+
+- Routing doesn't work yet
+- Video is stuck the first time you load (`please refresh to fix`)
+- layout is responive to a certain point but breaks on mobile
