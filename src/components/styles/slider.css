@@ -55,12 +55,16 @@
   z-index: -2;
 }
 
+.boo-parent {
+  display: flex;
+  justify-content: center;
+}
+
 .boo {
   font-family: 'Bangers', cursive;
   color: rgb(238, 131, 0);
-  top: 20rem;
-  left: 15rem;
   position: absolute;
   z-index: -1;
+  top: 20rem;
   font-size: 15rem;
 }
