@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build; surge ./build http://magic-park-bam.surge.sh/;"
+    "deploy": "npm run build; surge ./build http://www.bamerf.com/;"
   },
   "eslintConfig": {
     "extends": "react-app"
