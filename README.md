@@ -12,7 +12,7 @@
 
 ---
 
-> ## [👉 Checkout app here](http://www.bamerf.com/)
+> ## [👉 Checkout app here](http://www.bamerf-magic.com/)
 
 ---
 
