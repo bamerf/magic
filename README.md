@@ -12,7 +12,7 @@
 
 ---
 
-> ## [👉 Checkout app here](http://www.bamerf-magic.com/)
+> ## [👉 Checkout app here](http://magic-park-bam.surge.sh/)
 
 ---
 
