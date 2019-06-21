@@ -1,23 +1,18 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Menu from './components/Menu';
-import Hero from './components/Hero';
-import Carousel from './components/Carousel';
-import Slider from './components/Slider';
-import Video from './components/Video';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Triangle from './TrianglePage';
+import Circle from './CirclePage';
 
 function App() {
   return (
     <div className='App'>
-      <div className='front-page'>
-        <Menu />
-        <Header />
-        <Hero />
-      </div>
-      <Carousel className='page-2' />
-      <Slider className='page-3' />
-      <Video className='page-4' />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/triangle' component={Triangle} />
+        <Route exact path='/circle' component={Circle} />
+      </Switch>
     </div>
   );
 }

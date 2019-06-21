@@ -25,7 +25,8 @@
 
 ---
 
-### `Issues`
+### `Known Issues`
 
+- Vidoe doesn't autoplay on some browsers the first time, please `refresh` to force start it.
 - Routing doesn't work yet
 - layout is responive to a certain point but breaks on mobile

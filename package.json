@@ -8,6 +8,7 @@
     "react-dom": "^16.8.6",
     "react-gradient": "^1.0.1",
     "react-iframe": "^1.8.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "react-scroll-parallax": "^2.1.2",
     "react-spring": "^8.0.23",
@@ -19,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build; surge ./build http://www.bamerf-magic.com/;"
+    "deploy": "npm run build; surge ./build http://magic-park-bam.surge.sh/;"
   },
   "eslintConfig": {
     "extends": "react-app"
