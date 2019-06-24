@@ -32,7 +32,7 @@ export default class Menu extends Component {
       return {
         visibility: 'visible',
         listStyle: 'none',
-        fontSize: '3rem',
+        fontSize: '2rem',
         color: 'white',
         width: '120px',
         height: '60px',
@@ -62,7 +62,7 @@ export default class Menu extends Component {
         <ul className='menuItems'>
           {letters.map((letter, index) => (
             <li style={this.itemStyles()} className='items' key={index}>
-              {`${letter}`}
+              <span>{`${letter}`}</span>
             </li>
           ))}
         </ul>

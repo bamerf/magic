@@ -42,6 +42,7 @@ export default class Video extends Component {
         <div className='video-fg' onClick={() => this.changeBlendMode()} />
         <div className='video-bg'>
           <iframe
+            title='video of snail'
             src='https://player.vimeo.com/video/145953950?autoplay=1&loop=1&autopause=0'
             className='video'
             width='640'

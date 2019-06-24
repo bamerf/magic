@@ -1,9 +1,13 @@
 import React from 'react';
+import TweetBox from './components/TweetBox';
+import Header from './components/Header';
+import './components/styles/trianglePage.css';
 
 export default function TrianglePage() {
   return (
-    <div>
-      <h1>Triangle Page - Text analysis</h1>
+    <div className='trianglePage'>
+      <Header />
+      <TweetBox />
     </div>
   );
 }

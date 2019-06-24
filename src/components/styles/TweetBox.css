@@ -1,0 +1,30 @@
+.tweet-btn {
+  margin-left: 41.5rem;
+  font-size: 1.5rem;
+}
+
+.tweet-box-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+textarea {
+  font-size: 2rem;
+  outline: none;
+}
+
+textarea:focus {
+  border: 1px solid rgb(31, 148, 187);
+  transition: all 0.3s linear;
+}
+
+.character-num {
+  font-size: 2rem;
+}
+
+.tweet-box-footer {
+  display: flex;
+  justify-content: space-between;
+}

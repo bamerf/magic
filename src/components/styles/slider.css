@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers|Fredericka+the+Great&display=swap');
+* {
+  user-select: none;
+}
 
 .slider-fg {
   height: 100vh;
