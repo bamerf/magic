@@ -2,6 +2,7 @@
 
 .menu {
   position: absolute;
+  z-index: 1;
 }
 .menuItems {
   user-select: none;
@@ -37,4 +38,8 @@
 .hamburger > *:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.hambuger {
+  z-index: 1;
 }

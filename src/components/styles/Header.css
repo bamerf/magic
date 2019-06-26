@@ -17,6 +17,7 @@
   margin: auto;
   width: 300px;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .pages > * {
@@ -28,4 +29,10 @@
 .pages > *:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .pages {
+    width: 227px;
+  }
 }

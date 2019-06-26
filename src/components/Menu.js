@@ -39,7 +39,8 @@ export default class Menu extends Component {
         textAlign: 'center',
         borderBottom: '2px solid black',
         backgroundColor: sample(this.state.colors),
-        transition: 'all 0.1s ease-in-out'
+        transition: 'all 0.1s ease-in-out',
+        zIndex: 1
       };
     } else {
       return {

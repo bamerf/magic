@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+
 .tweet-btn {
   margin-left: 41.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .tweet-box-parent {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 textarea {
   font-size: 2rem;
   outline: none;
+  font-family: 'Changa', sans-serif;
 }
 
 textarea:focus {
@@ -27,4 +30,34 @@ textarea:focus {
 .tweet-box-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.tweetbox-title {
+  font-size: 3rem;
+  font-family: 'Changa', sans-serif;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.expression {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .tweetbox-title {
+    font-size: 2rem;
+  }
+  textarea {
+    width: 400px;
+    font-size: 1.5;
+  }
+  .tweet-box-footer {
+    width: 400px;
+  }
+  .tweet-btn {
+    margin-left: 0;
+  }
 }

@@ -5,7 +5,8 @@ import axios from 'axios';
 
 class TweetBox extends React.Component {
   state = {
-    character: ''
+    character: '',
+    sentiment: ''
   };
 
   handleChange = event => {
@@ -15,14 +16,17 @@ class TweetBox extends React.Component {
   };
 
   handleClick = () => {
+    const API_KEY = process.env.REACT_APP_TEXT_ANALYSIS_API_KEY;
     let text = encodeURI(this.state.character);
     console.log(text);
     axios
       .post(
-        `https://api.meaningcloud.com/sentiment-2.1?key=b584cf18d0fa2934b0abe045f6280338&of=json&text=${text}&model=general&lang=en&url=""&doc=""&txtf=plain`
+        `https://api.dandelion.eu/datatxt/sent/v1?lang=en&text=${text}&token=${API_KEY}`
       )
       .then(res => {
-        console.log(res);
+        this.setState({
+          sentiment: res.data.sentiment.type
+        });
       })
       .catch(err => {
         console.log(err);
@@ -42,12 +46,13 @@ class TweetBox extends React.Component {
     return (
       <div className='tweet-box-parent'>
         <div className='tweet-box'>
+          <div className='tweetbox-title'>Text Sentiment Analysis</div>
           <ProgressBar chars={character.length} />
           <textarea
             onChange={this.handleChange}
             placeholder='Type something...'
             cols='50'
-            rows='5'
+            rows='4'
           />
           <footer className='tweet-box-footer'>
             <span className='character-num' style={{ color }}>
@@ -61,6 +66,37 @@ class TweetBox extends React.Component {
               Analyse
             </button>
           </footer>
+          <div className='sentiment'>
+            {(() => {
+              if (this.state.sentiment === 'positive') {
+                return (
+                  <div className='expression'>
+                    <span role='img' aria-label='Smiley'>
+                      😄
+                    </span>
+                  </div>
+                );
+              } else if (this.state.sentiment === 'negative') {
+                return (
+                  <div className='expression'>
+                    <span role='img' aria-label='Unhappy'>
+                      🙁
+                    </span>
+                  </div>
+                );
+              } else if (this.state.sentiment === 'neutral') {
+                return (
+                  <div className='expression'>
+                    <span role='img' aria-label='Neutral'>
+                      😐
+                    </span>
+                  </div>
+                );
+              } else {
+                return '';
+              }
+            })()}
+          </div>
         </div>
       </div>
     );

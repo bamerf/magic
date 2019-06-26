@@ -1,0 +1,41 @@
+.tunnel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 25px solid white;
+}
+
+.audio-visualisation {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.audio-title {
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 3rem;
+  font-family: 'Changa', sans-serif;
+}
+
+button {
+  font-family: 'Changa', sans-serif;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.2s linear;
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 1px 1px white;
+}
+
+button:focus {
+  outline: none;
+}

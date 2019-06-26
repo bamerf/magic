@@ -10,13 +10,13 @@ export default class Header extends Component {
     return (
       <div className='header'>
         <div className='pages'>
-          <Link to='/circle'>
+          <Link to='/textPage'>
             <Circle />
           </Link>
           <Link to='/'>
             <Rectangle />
           </Link>
-          <Link to='/triangle'>
+          <Link to='/audioPage'>
             <Triangle />
           </Link>
         </div>

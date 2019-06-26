@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+
 .hero {
   text-align: center;
+}
+
+.b-canvas {
+  position: relative;
+  top: -6rem;
+  width: 350;
+  height: 700px;
+  z-index: 0;
+}
+
+.magic {
+  position: relative;
+  top: 5rem;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-family: 'Changa', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .magic {
+    font-size: 2rem;
+  }
 }
