@@ -27,6 +27,7 @@ class TweetBox extends React.Component {
         this.setState({
           sentiment: res.data.sentiment.type
         });
+        console.log(res.data);
       })
       .catch(err => {
         console.log(err);

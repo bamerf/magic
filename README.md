@@ -30,7 +30,7 @@
 
 ---
 
-> ## [👉 Checkout app here](http://magic-park-bam.surge.sh/)
+> ## [👉 Checkout app here](https://magic-park-bam.surge.sh/)
 
 ---
 
